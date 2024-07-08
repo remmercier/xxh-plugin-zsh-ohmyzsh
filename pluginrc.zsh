@@ -25,6 +25,13 @@ else
   export plugins=(git)
 fi
 
+# Define plugins here cause that that doesn't work with environment variables
+plugins=(aliases history vi-mode)
+
 export DISABLE_AUTO_UPDATE=true
 source $CURR_DIR/ohmyzsh/oh-my-zsh.sh
 autoload -U compinit && compinit
+
+# Source files copied by xxh-plugin-prerun-dotfiles
+[[ ! -f ~/.zshrc ]] || source ~/.zshrc
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
