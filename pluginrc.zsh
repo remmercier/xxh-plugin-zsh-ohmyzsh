@@ -34,4 +34,3 @@ autoload -U compinit && compinit
 
 # Source files copied by xxh-plugin-prerun-dotfiles
 [[ ! -f ~/.zshrc ]] || source ~/.zshrc
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
